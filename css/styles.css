@@ -95,7 +95,7 @@ img {
     position: relative;
 }
 
-.navigation-link.link-active:active::after {
+.navigation-link.link-active::after {
     content: '';
     position: absolute;
     left: 0;
@@ -103,8 +103,12 @@ img {
     display: block;
     width: 100%;
     height: 4px;
-    color: #404BBF;
+    background-color: #404BBF;
     border-radius: 2px;
+}
+
+.link-active:active {
+    color: #404BBF;
 }
 
 .navigation-link:hover, .navigation-link:focus {
